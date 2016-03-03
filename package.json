@@ -1,0 +1,23 @@
+{
+  "name": "formbuilder",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flb31/FormBuilder.git"
+  },
+  "author": "Fabian Luna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flb31/FormBuilder/issues"
+  },
+  "homepage": "https://github.com/flb31/FormBuilder#readme",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
