@@ -1,0 +1,22 @@
+<!document html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form31 Builder</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    
+    <div id="content-form"></div>
+    
+    <script src="formbuilder.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+          new FormBuilder({
+            content: "#content-form",
+            url: "form.txt"
+          });
+        });
+    </script>
+  </body>
+</html>

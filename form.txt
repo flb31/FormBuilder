@@ -1,0 +1,11 @@
+
+form : action=example, method=POST, class=custom
+  panel: title=My Panel Form
+    input: type=text, id=firstName, label=First Name, value=Fabian, validation=REQUIRED, class=customfield
+    input: type=text, id=lastName, label=Last Name, value=Luna Barrios, validation=REQUIRED, class=customfield
+    input: type=date, id=birth, label=Birth Day, validation=DATE, class=customfield, event=change:validationBirth
+form : action=example, method=POST, class=custom
+  
+
+
+
