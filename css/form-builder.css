@@ -1,0 +1,160 @@
+*{box-sizing: border-box;}
+
+/*
+  *media queries
+    @media(min-width: 320px){}
+    @media(min-width: 768px){}
+    @media(min-width: 1024px){}
+    @media(min-width: 1600px){}
+*/
+
+/*
+  *Fonts
+    font-family: 'Open Sans', sans-serif;
+      300 - 400 - 400italic - 600 - 700
+*/
+html{font-size: 62.5%;}// 10px
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem; // 10px
+  font-weight: 400;
+}
+
+panel{display: block;}
+
+panel:before{
+  color: #f1f1f1;
+  content: attr(title);
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.css-form{
+  background-color: #4D8CF5;
+  border-radius: 1px;
+  font-size: 1.6rem;
+  left: 50%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.css-form input,
+.css-form textarea{
+  background: #f1f1f1;
+  border-radius: 1px;
+  border: none;
+  display: block;
+  line-height: 1;
+  margin: 0 auto 10px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.css-form input[type="submit"],
+.css-form input[type="button"],
+.css-form button{
+  background: #f1f1f1;
+  border-radius: 2px;
+  border: none;
+  color: #EA4335;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  transition: all linear .2s;
+  width: 100%;
+}
+
+.css-form input[type="submit"]:hover,
+.css-form input[type="button"]:hover,
+.css-form button:hover{
+  background-color: #EA4335;
+  color: #f1f1f1;
+}
+
+.wrapper{
+  background-color: #f1f1f1;
+  height: 100vh;
+  width: 100%;
+}
+
+.alert{
+  background: #ccc;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 0 10px #ccc;
+  margin-left: 10%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  transition: all linear 0.3s;
+  width: 80%;
+  z-index: 100;
+}
+
+.alert--success{
+  background: #34A853;
+  box-shadow: 0 0 10px #34A853;
+}
+
+.alert--info{
+  background: #4D8CF5;
+  box-shadow: 0 0 10px #4D8CF5;
+}
+
+.alert--warning{
+  background: #FBBC05;
+  box-shadow: 0 0 10px #FBBC05;
+}
+
+.alert--danger{
+  background: #EA4335;
+  box-shadow: 0 0 10px #EA4335;
+}
+
+.btn--success{
+  background: #34A853;
+  color: white;
+}
+
+.btn--info{
+  background: #4D8CF5;
+  color: white;
+}
+
+.btn--warning{
+  background: #FBBC05;
+  color: white;
+}
+
+.btn--danger{
+  background: #EA4335;
+  color: white;
+}
+
+.alert p{
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 0;
+}
+
+.alert p:last-child{margin-bottom: 0;}
+
+@media screen and (min-width: 320px){
+  .css-form{
+    font-size: 1.8rem;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px){
+  .css-form{
+    font-size: 2rem;
+    width: 500px;
+  }
+}

@@ -4,6 +4,7 @@ form : action=example, method=POST, class=custom
     input: type=text, id=firstName, label=First Name, value=Fabian, validation=REQUIRED, class=customfield
     input: type=text, id=lastName, label=Last Name, value=Luna Barrios, validation=REQUIRED, class=customfield
     input: type=date, id=birth, label=Birth Day, validation=DATE, class=customfield, event=change:validationBirth
+    input: type=submit, id=birth, label=Birth Day
 form : action=example, method=POST, class=custom
   
 

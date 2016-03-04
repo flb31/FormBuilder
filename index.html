@@ -1,15 +1,32 @@
-<!document html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Form31 Builder</title>
-    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Form Builder</title>
+    <link rel="icon" type="image/x-icon" href="images/design/icons/favicon/favicon.ico">
+    <link rel="mask-icon" href="images/design/icons/favicon/favicon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/form-builder.css">
   </head>
   <body>
+  <div class="alert alert--danger">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sunt quod natus accusantium eum, velit, dolores iure ea similique aliquam nulla nostrum illum sapiente unde illo distinctio suscipit tempore perferendis.</p>
+  </div>
     
-    <div id="content-form"></div>
-    
-    <script src="formbuilder.js"></script>
+    <div class="wrapper">
+      <div id="content-form" class="css-form">
+        <input type="submit" value="Enviar" class="btn--success">
+        <input type="button" value="Enviar">
+        <button>Enviar Button</button>
+        <textarea name="" id="" cols="10" rows="2">Textarea</textarea>
+      </div>
+    </div>
+
+    <script src="js/formbuilder.js"></script>
     <script>
         window.addEventListener("load", function(){
           new FormBuilder({
